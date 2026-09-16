@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>REVI01 | Matemática Aplicada à Ciência de Dados</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topo">
+    <div class="marca">
+        <div class="escudo">CAP</div>
+
+        <div>
+            <h1>REVI01</h1>
+            <p>Matemática Aplicada à Ciência de Dados</p>
+        </div>
+    </div>
+
+    <div class="professor">
+        Prof. Miderson Andrei Santana
+    </div>
+</header>
+
+
+<main>
+
+    <!-- LOGIN -->
+    <section id="telaLogin" class="card login">
+
+        <div class="faixa-athletico">
+            🔴⚫ TERRITÓRIO RUBRO-NEGRO ⚫🔴
+        </div>
+
+        <h2>Preparação para a Avaliação</h2>
+
+        <p class="descricao">
+            Bacharelado em Sistemas de Informação
+        </p>
+
+        <div class="mensagem-athletico">
+            <strong>ATHLETICO PARANAENSE</strong><br>
+            O Furacão • Rubro-Negro • Campeão • O melhor do mundo! 🌪️
+        </div>
+
+        <label for="nome">Nome do acadêmico</label>
+        <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome"
+            autocomplete="off"
+        >
+
+        <label for="senha">Senha de acesso</label>
+        <input
+            type="password"
+            id="senha"
+            placeholder="Digite a senha"
+        >
+
+        <button id="btnIniciar">
+            INICIAR REVISÃO
+        </button>
+
+        <p id="erroLogin" class="erro"></p>
+
+        <div class="info-login">
+            🎯 10 questões aleatórias de um banco com 50 atividades
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section id="telaQuiz" class="quiz escondido">
+
+        <div class="painel-superior">
+
+            <div>
+                <span>Acadêmico</span>
+                <strong id="nomeAluno"></strong>
+            </div>
+
+            <div>
+                <span>Questão</span>
+                <strong id="numeroQuestao">1 / 10</strong>
+            </div>
+
+            <div>
+                <span>Progresso</span>
+                <strong id="porcentagem">10%</strong>
+            </div>
+
+        </div>
+
+
+        <div class="barra">
+            <div id="barraProgresso"></div>
+        </div>
+
+
+        <article class="card questao-card">
+
+            <div id="badgeQuestao" class="badge">
+                QUESTÃO 01
+            </div>
+
+            <h2 id="enunciado"></h2>
+
+            <div id="areaVisual" class="area-visual"></div>
+
+            <div id="alternativas" class="alternativas"></div>
+
+        </article>
+
+
+        <div class="acoes">
+
+            <button
+                id="btnAnterior"
+                class="btn-secundario"
+            >
+                ← Anterior
+            </button>
+
+            <button id="btnProxima">
+                Próxima →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULTADO -->
+    <section id="telaResultado" class="card resultado escondido">
+
+        <div class="trofeu">🏆</div>
+
+        <h2>Revisão concluída!</h2>
+
+        <h3 id="resultadoNome"></h3>
+
+        <div class="placar">
+
+            <div>
+                <span id="notaFinal">0</span>
+                <small>ACERTOS</small>
+            </div>
+
+            <div>
+                <span id="percentualFinal">0%</span>
+                <small>APROVEITAMENTO</small>
+            </div>
+
+        </div>
+
+        <p id="mensagemFinal"></p>
+
+        <button id="btnReiniciar">
+            NOVA RODADA
+        </button>
+
+        <div class="homenagem-final">
+            🌪️ <strong>ATHLETICO PARANAENSE</strong> 🌪️<br>
+            Furacão • Campeão • Gigante Rubro-Negro • Maior do mundo!
+        </div>
+
+        <div id="revisaoFinal"></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <strong>Prof. Miderson Andrei Santana</strong><br>
+    Matemática Aplicada à Ciência de Dados
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
